@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPA Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="header">
+    <h1>Class Mark Sheet</h1>
+    <form action="#">
+        <label for="name">Họ và tên</label><input type="text" id="name">
+        <label for="markMath">Điểm toán</label><input type="number" id="markMath" min="0" max="10">
+        <label for="markPhysic">Điểm lý</label><input type="number" id="markPhysic" min="0" max="10">
+        <label for="markChemistry">Điểm hóa</label><input type="number" id="markChemistry" min="0" max="10">
+    </form>
+    <button type="button" id="importBtn" onclick="importData()">Nhập</button>
+</div>
+<div id="markSheet">
+    <table id="sheet">
+        <tr>
+            <th class="stt">STT</th>
+            <th class="name">Họ và tên</th>
+            <th class="mark">Toán</th>
+            <th class="mark">Lý</th>
+            <th class="mark">Hóa</th>
+            <th class="avg">Trung bình</th>
+<!--            <th class="no-border"></th>-->
+<!--            <th class="no-border"></th>-->
+        </tr>
+    </table>
+    <button type="button" id="calAvgBtn" onclick="calAvg()">Tính điểm trung bình</button>
+    <button type="button" id="defineGoodStudentBtn" onclick="defineGoodStudent()">Xác định học sinh giỏi</button>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
